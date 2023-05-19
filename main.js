@@ -41,7 +41,7 @@ while(continuar){
 console.log(productos)
 continuar = confirm("Desea actualizar algún producto?")
 while(continuar){
-    const productoNombreActualizar = prompt("que producto desea actualizar?").toUpperCase()
+    const productoNombreActualizar = prompt("Que producto desea actualizar?").toUpperCase()
     const index = productos.findIndex((producto)=> producto.nombreproducto === productoNombreActualizar)
     if(index != -1){
         const nombreproducto = prompt("Cual es su nombre?").toUpperCase()
@@ -63,7 +63,7 @@ console.log(productos)
 
 continuar = confirm("Quiere aumentar el precio de algún producto")
 while(continuar){
-    const productoNombreActualizar = prompt("que producto quiere aumentar?").toUpperCase()
+    const productoNombreActualizar = prompt("Que producto quiere aumentar?").toUpperCase()
     const index = productos.findIndex((producto)=> producto.nombreproducto === productoNombreActualizar)
     if(index != -1){
         const procertajeActualizado = parseFloat(prompt("Ingrese que porcentaje quiere aumentar el producto"))
